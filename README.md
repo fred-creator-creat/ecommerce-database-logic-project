@@ -18,7 +18,7 @@ Devido ao fato de estar utilizando um **computador emprestado** que não possui 
 * **Proatividade:** Essa escolha garantiu que o desafio fosse entregue dentro dos prazos, validando a lógica e a integridade referencial através de scripts funcionais, mesmo sem a ferramenta visual padrão.
 
 ### 📊 Representação Visual (Diagrama ERD)
-Para permitir que a professora e outros desenvolvedores visualizem a estrutura das **12 tabelas** criadas, utilizei a ferramenta **[dbdiagram.io](https://dbdiagram.io/)**. 
+Para permitir que a professora e outros desenvolvedores visualizem a estrutura das **12 tabelas** criadas, utilizei a ferramenta **[dbdiagram.io](https://dbdiagram.io/)**. 
 
 * **Contorno Técnico:** Como a ferramenta exige login para certas funções e utiliza a linguagem **DBML**, realizei a conversão manual dos scripts SQL para este formato, garantindo a geração correta das tabelas e seus relacionamentos (Primary Keys e Foreign Keys).
 * **Entregas Visuais:** Devido às restrições de exportação da plataforma (que exigem conta), o diagrama foi capturado via **print** e o código fonte de backup salvo em arquivo de texto, ambos disponíveis neste repositório.
@@ -35,13 +35,13 @@ O projeto contempla os seguintes refinamentos de negócio solicitados no desafio
 
 ---
 
-## 📂 Arquivos no Repositório
+## 📂 Arquivos no Repositório (Acesse os arquivos abaixo)
 
 | Arquivo | Descrição |
 | :--- | :--- |
-| `Projeto_Logico_Ecommerce_SQL.ipynb` | Notebook principal com o código SQL/Python. |
-| `diagrama_ecommerce.png` | Print da modelagem visual das tabelas. |
-| `projeto_ecommerce.dbml` | Código fonte DBML usado no diagrama visual. |
+| 📄 [Projeto_Logico_Ecommerce_SQL.ipynb](./Projeto_Logico_Ecommerce_SQL.ipynb) | Notebook principal com o código SQL/Python. |
+| 🖼️ [Visualização do Diagrama (Print)](./diagrama_ecommerce.png) | Print da modelagem visual das tabelas. |
+| 📝 [Código Fonte DBML (Texto)](./projeto_ecommerce.dbml) | Código fonte DBML usado no diagrama visual. |
 
 ---
 
