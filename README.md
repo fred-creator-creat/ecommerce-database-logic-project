@@ -2,7 +2,7 @@
 
 Este projeto faz parte do desafio final de Modelagem de Dados do curso **Excel e Power BI Dashboards 2026**, realizado na plataforma **[DIO](https://www.dio.me/)** sob o patrocínio e bolsa de estudos da **[Klabin](https://www.klabin.com.br/)**.
 
-**Desenvolvedor:** [Seu Nome Aqui]
+**Desenvolvedor:** [Fred Cavalheiro]
 **Auxílio Técnico:** Gemini AI (Colaborador de análise e suporte)
 
 ---
