@@ -41,7 +41,7 @@ O projeto contempla os seguintes refinamentos de negócio solicitados no desafio
 | :--- | :--- |
 | 📄 [Projeto_Logico_Ecommerce_SQL.ipynb](./Projeto_Logico_Ecommerce_SQL.ipynb) | Notebook principal com o código SQL/Python. |
 | 🖼️ [Visualização do Diagrama (Print)](./diagrama_ecommerce.png) | Print da modelagem visual das tabelas. |
-| 📝 [Código Fonte DBML (Texto)](./projeto_ecommerce.dbml) | Código fonte DBML usado no diagrama visual. |
+| 📝 [Código Fonte DBML (Texto)](./projeto_ecommerce.txt) | Código fonte DBML usado no diagrama visual. |
 
 ---
 
