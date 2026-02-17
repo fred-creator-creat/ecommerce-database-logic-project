@@ -15,7 +15,7 @@ Este repositório apresenta a solução completa para um sistema de banco de dad
 ### 🛠️ Solução Criativa e Adaptação de Hardware
 Devido ao fato de estar utilizando um **computador emprestado** que não possui suporte para a instalação de softwares pesados como o **MySQL Workbench**, optei por uma solução inteiramente baseada em nuvem:
 * **Ambiente de Desenvolvimento:** [Google Colab](https://colab.research.google.com/)
-* **Tecnologia:** Linguagem **SQL** executada via **Python** com a biblioteca `mysql-connector-python`.
+* **Tecnologia:** Linguagem **SQL** executada via **Python** com as bibliotecas `mysql-connector-python` e `Pandas` (utilizada para o tratamento dos dados e para possibilitar a visualização dos resultados das queries em formato de tabelas organizadas).
 * **Proatividade:** Essa escolha garantiu que o desafio fosse entregue dentro dos prazos, validando a lógica e a integridade referencial através de scripts funcionais, mesmo sem a ferramenta visual padrão.
 
 ### 📊 Representação Visual (Diagrama ERD)
@@ -48,6 +48,7 @@ O projeto contempla os seguintes refinamentos de negócio solicitados no desafio
 
 ## 🔗 Ferramentas Utilizadas
 * [Google Colab](https://colab.research.google.com/) - Execução do Banco de Dados.
+* [Pandas](https://pandas.pydata.org/) - Visualização e Manipulação de Dados.
 * [dbdiagram.io](https://dbdiagram.io/) - Modelagem Visual.
 * [GitHub](https://github.com/) - Hospedagem e Documentação.
 * [DIO](https://www.dio.me/) & [Klabin](https://www.klabin.com.br/) - Apoio educacional e patrocínio.
