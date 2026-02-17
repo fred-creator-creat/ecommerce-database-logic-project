@@ -1,0 +1,117 @@
+Table client {
+  idClient int [pk, increment]
+  Fname varchar(50)
+  Minit char(3)
+  Lname varchar(50)
+  CPF char(11) [unique]
+  Address varchar(255)
+  type_client enum
+  CNPJ char(15) [unique]
+}
+
+Table product {
+  idProduct int [pk, increment]
+  Pname varchar(255)
+  classification_kids bool
+  category enum
+  avaliação varchar(10)
+  size varchar(10)
+}
+
+Table orders {
+  idOrder int [pk, increment]
+  idOrderClient int
+  orderStatus enum
+  orderDescription varchar(255)
+  sendValue float
+  paymentCash bool
+}
+
+Table payments {
+  idClient int
+  idPayment int
+  typePayment enum
+  limitAvailable float
+  indexes {
+    (idClient, idPayment) [pk]
+  }
+}
+
+Table productStorage {
+  idProdStorage int [pk, increment]
+  storageLocation varchar(255)
+  quantity int
+}
+
+Table supplier {
+  idSupplier int [pk, increment]
+  SocialName varchar(255)
+  CNPJ char(15) [unique]
+  contact char(11)
+}
+
+Table seller {
+  idSeller int [pk, increment]
+  SocialName varchar(255)
+  AbstName varchar(255)
+  CNPJ char(15) [unique]
+  CPF char(11) [unique]
+  location varchar(255)
+  contact char(11)
+}
+
+Table productSeller {
+  idPseller int
+  idPproduct int
+  prodQuantity int
+  indexes {
+    (idPseller, idPproduct) [pk]
+  }
+}
+
+Table productOrder {
+  idPOproduct int
+  idPOorder int
+  poQuantity int
+  poStatus enum
+  indexes {
+    (idPOproduct, idPOorder) [pk]
+  }
+}
+
+Table storageLocation {
+  idLproduct int
+  idLstorage int
+  location varchar(255)
+  indexes {
+    (idLproduct, idLstorage) [pk]
+  }
+}
+
+Table productSupplier {
+  idPsSupplier int
+  idPsProduct int
+  quantity int
+  indexes {
+    (idPsSupplier, idPsProduct) [pk]
+  }
+}
+
+Table delivery {
+  idDelivery int [pk, increment]
+  idDeliveryOrder int
+  deliveryStatus enum
+  trackingCode varchar(50) [unique]
+}
+
+Ref: orders.idOrderClient > client.idClient
+Ref: payments.idClient > client.idClient
+Ref: productSeller.idPseller > seller.idSeller
+Ref: productSeller.idPproduct > product.idProduct
+Ref: productOrder.idPOproduct > product.idProduct
+Ref: productOrder.idPOorder > orders.idOrder
+Ref: storageLocation.idLproduct > product.idProduct
+Ref: storageLocation.idLstorage > productStorage.idProdStorage
+Ref: productSupplier.idPsSupplier > supplier.idSupplier
+Ref: productSupplier.idPsProduct > product.idProduct
+Ref: delivery.idDeliveryOrder > orders.idOrder
