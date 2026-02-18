@@ -50,6 +50,7 @@ O projeto contempla os seguintes refinamentos de negócio solicitados no desafio
 * [Google Colab](https://colab.research.google.com/) - Execução do Banco de Dados.
 * [MySQL](https://www.mysql.com/) - Sistema de Gerenciamento de Banco de Dados (SGBD).
 * [MySQL Connector/Python](https://dev.mysql.com/doc/connector-python/en/) - Driver oficial da Oracle para integração entre Python e MySQL.
+* [SQLAlchemy](https://www.sqlalchemy.org/) - SQL Toolkit e Object Relational Mapper para Python.
 * [Pandas](https://pandas.pydata.org/) - Visualização e Manipulação de Dados.
 * [dbdiagram.io](https://dbdiagram.io/) - Modelagem Visual.
 * [GitHub](https://github.com/) - Hospedagem e Documentação.
